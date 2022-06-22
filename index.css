@@ -13,15 +13,42 @@ html {
 nav {
     display: flex;
     align-items: center;
+    margin-right: 25px;
+    padding: 1% 1% 1%;
+    border-style: dashed;
 }
 
+h1 {
+    font-size: 35px;
+    margin-top: 15px;
+    font-weight: heavy;
+    font-family: serif;
+}
+
+#logo {
+    float: left;
+}
 
 .navigation-items{
     font-size: 20px;
     display: inline-flex;
     list-style-type: none;
+    align-items: center;
+
+}
+
+.navigation-item{
+    padding: 2px 2px 2px;
+    font-family: serif;
+    background-color: aqua;
+    border: 1px solid black;
+
 }
 
 body {
     background-color: beige;
+}
+main {
+    margin-top: 5%;
+    border-style: dashed;
 }
