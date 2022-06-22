@@ -1,0 +1,27 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+#profile-pic {
+    width: 100px;
+    border-radius: 50px;
+    float: left;
+    margin-right: 20px;
+};
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+
+.navigation-items{
+    font-size: 20px;
+    display: inline-flex;
+    list-style-type: none;
+}
+
+body {
+    background-color: beige;
+}
