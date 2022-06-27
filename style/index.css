@@ -1,0 +1,20 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: aliceblue;
+  margin: 0;
+  font-family: "Georgia";
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+}
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+}/*# sourceMappingURL=index.css.map */
