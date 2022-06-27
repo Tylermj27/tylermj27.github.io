@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta chatset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta chatset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tyler Johnson Portfolio</title>
-        <link rel="stylesheet" href="./index.css"/>
+        <link rel="stylesheet" href="style/index.css"/>
     </head>
     <body>
-        <nav>
-            <img src="./Portfolio-Image.jpg" id="profile-pic" alt="Picture of website creator"/>
-            <h1 id="logo">Tyler Johnson</h1>          
-            <ul class="navigation-items">
-                <li class="navigation-item" href="./index.html">About Me </li>
-                <li class="navigation-item">Projects </li>
-                <li class="navigation-item">Contact </li>
-            </ul>  
-        </nav>
-        <main>
-            <h1 id="'about-me">About Me</h1>
-                <ul id="description">
+            <div class="navbar">
+                <div class="container">
+                    <a href="./index.html" class="logo">Tyler Johnson</a>
+                    <img id="mobile-cta" class="mobile-menu" src="images/menu.svg">
+                    <nav>
+                        <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg">       
+                        <ul class="primary-nav">
+                            <li class="current"><a href="./index.html">About Me</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Skills</a></li>
+                        </ul> 
+                        <ul class="secondary-nav">
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>  
+                </div>
+            </div> 
+        <section class="about-me-section">
+            <div class="profile-pic-container">
+                <img src="images/Profile Pic.jpg" class ="profile-pic" alt="picture of the creator of this website">
+            </div>
+            <div class="container">
+            <h2 class="about-me">About Me</h2>
+                <ul class="description">
                     <p>I graduated from the University of Missouri in May of 2022 with a bachelor of health science, with an emphasis in health and rehabilitation science. My career at Mizzou started
                         with my pursuit of a degree in computer science, however, after my first year I decided to take a year off to reevaulate what it was I wanted to do with my life. After the year off I 
                         decided on pursuing physical therapy instead of software development. In my last two semester I did more research on the degree path and the programs I could get into and realized that the programs
@@ -27,13 +39,41 @@
                     </p>
                     
                     <p>
-                        My focus has been on full-stack development with languages focused on that such as javascript, html, and css (see the skills tab for a more indepth breakdown). 
+                        My focus has been on full-stack development with languages focused on that such as javascript, html, and css (see the skills tab for a more indepth breakdown). So far the projects that I have completed
+                        have been basic and prompt driven, however, I have started to move into more challenging tasks. The most ambitious one yet is this very website. I have designed this website to also be mobile compatible, 
+                        as well as allowing it to show case the skills that I have developed in my short career.
                     </p>
                 </ul>
-        </main>
-        <footer>
+            </div>
+        </section>
 
-        </footer>
+        <section class="project-section">
+            <div class="container">
+                <h2 class="project">Projects</h2>
+                <ul class="project-items">
+                    <li>Mixed Messages</li>
+                    <li>To be added</li>
+                    <li>To be added</li>
+                    <li>To be added</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="skill-section">
+            <div class="container">
+                <h2 class="skill">Skills</h2>
+                <ul class="skill-items">
+                    <li>Javascript</li>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS3</li>
+                    <li>VS Code</li>
+                    <li>Github</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
     </body>
     <script></script>
 </html>
