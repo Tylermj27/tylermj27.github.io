@@ -10,7 +10,7 @@ body {
 }
 
 .navbar{
-    background: white;
+    background: lightblue;
     padding: 1em;
 
     .logo{
@@ -63,10 +63,44 @@ section {
     }
 
     .description {
-        font-size: 0.75em;
-        
+        font-size: 0.75em;   
+    }
+}
+
+.project-section{
+    background: grey;
+
+}
+
+ul.project-items {
+    margin: 0;
+    padding-left: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1f));
+
+    li {
+        font-size: 1.2em;
+        margin-bottom: 1em;
+        margin-left: 2em;    
     }
 
+    .mixed-message-pic{
+        display: none;
+        height: auto;
+        width:30em;
+        transform: rotate(90deg);
+    }
+
+}
+
+.skill-section{
+    background: slategray;
+
+    .skill-items {
+        display: inline-block;
+        margin-right: 1em;
+        padding: 1em;
+    }
 }
 
 h2 {
@@ -121,4 +155,46 @@ nav {
     float: right;
     margin: .5em;
     cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    .mobile-menu, .mobile-menu-exit{
+        display: none;
+    }
+
+    .navbar .container {
+        display: grid;
+        grid-template-columns: 300px auto;
+        justify-content: unset;
+
+    }
+
+    .navbar nav {
+        display:flex;
+        place-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+
+        ul {
+            display: flex;
+        }
+        a{
+            color: black;
+            font-size: 1em;
+            padding: .1em 1em;
+        }
+        ul.primary-nav {
+            margin: 0;
+        }
+        li.current a{
+            font-weight: bold;
+        }
+
+    }
+
+
+
 }

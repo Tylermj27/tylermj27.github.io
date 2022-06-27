@@ -10,7 +10,7 @@ body {
 }
 
 .navbar {
-  background: white;
+  background: lightblue;
   padding: 1em;
 }
 .navbar .logo {
@@ -61,6 +61,37 @@ section {
   font-size: 0.75em;
 }
 
+.project-section {
+  background: grey;
+}
+
+ul.project-items {
+  margin: 0;
+  padding-left: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1f));
+}
+ul.project-items li {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+}
+ul.project-items .mixed-message-pic {
+  display: none;
+  height: auto;
+  width: 30em;
+  transform: rotate(90deg);
+}
+
+.skill-section {
+  background: slategray;
+}
+.skill-section .skill-items {
+  display: inline-block;
+  margin-right: 1em;
+  padding: 1em;
+}
+
 h2 {
   font-size: 1.75em;
   line-height: 1.5em;
@@ -107,4 +138,40 @@ nav li a:hover {
   float: right;
   margin: 0.5em;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 300px auto;
+    justify-content: unset;
+  }
+
+  .navbar nav {
+    display: flex;
+    place-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: 0.1em 1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+  }
 }/*# sourceMappingURL=index.css.map */
