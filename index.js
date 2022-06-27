@@ -1,0 +1,1 @@
+const mobileBtn = document.getElementById('mobile-cta');

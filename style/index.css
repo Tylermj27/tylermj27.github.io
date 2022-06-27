@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  background: white;
 }
 
 body {
@@ -17,4 +18,93 @@ body {
   font-weight: bold;
   color: black;
   font-size: 1.2em;
+  padding: 0 2em;
+}
+.navbar nav {
+  display: none;
+}
+.navbar .container {
+  display: flex;
+  place-content: space-between;
+}
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+a {
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  padding: 3em 2em;
+}
+
+.about-me-section {
+  background: lightgray;
+  padding: 1em;
+  display: inline-block;
+  align-items: center;
+}
+.about-me-section .profile-pic {
+  height: 15em;
+  width: auto;
+  border-radius: 25%;
+  margin: 1em auto 0.5em auto;
+}
+.about-me-section .description {
+  font-size: 0.75em;
+}
+
+h2 {
+  font-size: 1.75em;
+  line-height: 1.5em;
+}
+
+.head {
+  background: gray;
+  border-radius: 3em;
+  padding: 0em 1em;
+  font-weight: bold;
+  display: flex;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: coral;
+  height: 100vh;
+  padding: 1em;
+}
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+nav li a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */
