@@ -9,17 +9,32 @@ body {
     font-family: 'Georgia';
 }
 
+:root {
+    --font-color1: #120309; // 
+    --font-color2: #4D93A8; //F55C3D 3B7080B
+    --font-color3: #DDD5D0;
+ 
+    --background-color1: #EBEBEB;
+    --background-color2: #1C110A; //222222
+    --background-color3: #E0E0E0;
+}
+
+
 .navbar{
-    background: lightblue;
+    background: var(--background-color1);
     padding: 1em;
 
     .logo{
         text-decoration: none;
         font-weight: bold;
-        color: black;
+        color: var(--font-color1);
         font-size: 1.2em;
         padding: 0 2em;
     }  
+
+    .logo-name{
+        color: var(--font-color2);
+    }
 
     nav {
         display: none;
@@ -32,6 +47,29 @@ body {
 
     .mobile-menu{
         cursor: pointer;
+    }
+}
+
+.introduction {
+    background: var(--background-color3);
+    color: var(--font-color1);
+    background-image: url(../images/Profile\ Pic.jpg);
+    background-size: cover;
+    //background-position: center;
+
+
+    .greeting {
+        font-size: 1em;
+    }
+    .name{
+        font-size: 2em;
+        font-weight: bold;
+        span{
+            color:var(--font-color2);
+        }
+    }
+    .title{
+        font-size: 1.25em; 
     }
 }
 
@@ -50,25 +88,40 @@ section {
 }
 
 .about-me-section{
-    background: lightgray;
+    background: var(--background-color1);
     padding: 1em;
-    display: inline-block;
+    display: inline-flex;
     align-items: center;
+
+    .about-left{
+        padding: 0 .5em 0 0.5em;
+    }
 
     .profile-pic {
         height: 15em;
         width: auto;
-        border-radius: 25%;
         margin: 1em auto 0.5em auto;
     }
 
+    .about-right{
+        padding: 0 .5em 0 0.5em;
+    }
+
+    .head{
+        color: var(--font-color2);
+        background: var(--background-color2);
+        text-align: center;
+    }
+
     .description {
-        font-size: 0.75em;   
+        font-size: 0.9em;   
+        text-align: center;
+        color: var(--font-color1);
     }
 }
 
 .project-section{
-    background: grey;
+    background: var(--background-color3);
 
 }
 
@@ -94,7 +147,7 @@ ul.project-items {
 }
 
 .skill-section{
-    background: slategray;
+    background: var(--background-color3);
 
     .skill-items {
         display: inline-block;
@@ -123,7 +176,7 @@ nav.menu-btn {
 nav {
     position: fixed;
     z-index: 999;
-    width: 66%;
+    width: 33%;
     right: 0;
     top: 0;
     background: coral;
@@ -166,7 +219,6 @@ nav {
         display: grid;
         grid-template-columns: 300px auto;
         justify-content: unset;
-
     }
 
     .navbar nav {
