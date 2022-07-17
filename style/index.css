@@ -1,28 +1,25 @@
 html {
   scroll-behavior: smooth;
-  background: white;
 }
 
 body {
-  background: aliceblue;
   margin: 0;
   font-family: "Georgia";
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
 
 :root {
   --font-color1: #120309;
   --font-color2: #4D93A8;
   --font-color3: #DDD5D0;
-  --background-color1: #EBEBEB;
-  --background-color2: #1C110A;
-  --background-color3: #E0E0E0;
 }
 
 .navbar {
   background: var(--background-color1);
-  padding: 1.6vh;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  margin-right: 0;
 }
 .navbar .logo {
   text-decoration: none;
@@ -30,8 +27,7 @@ body {
   color: var(--font-color1);
   font-size: 1.2em;
   padding: 0;
-  padding-right: 5em;
-  padding-left: 3em;
+  padding-left: 1em;
 }
 .navbar .logo-name {
   color: var(--font-color2);
@@ -53,7 +49,8 @@ body {
   background-image: url(../images/intro-img.svg);
   background-size: cover;
   background-position: center;
-  background-size: 75vh;
+  background-size: 70vh;
+  margin: 0;
 }
 .introduction .greeting {
   font-size: 1.75vh;
@@ -85,7 +82,6 @@ section {
 }
 
 .about-me-section {
-  background: var(--background-color1);
   padding: 1vh;
   display: inline-flex;
   align-items: center;
@@ -97,10 +93,11 @@ section {
   height: 30vh;
   width: auto;
   margin: 1em auto 0.5em auto;
+  display: none;
 }
 .about-me-section .about-right {
   padding: 0 0.5em 0 0.5em;
-  size: 15vh;
+  size: 10vh;
 }
 .about-me-section .head {
   color: var(--font-color2);
@@ -114,31 +111,27 @@ section {
 }
 
 .project-section {
-  background: var(--background-color3);
+  align-items: center;
 }
 
 ul.project-items {
   margin: 0;
-  padding-left: 1em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(19rem, 1f));
+  vertical-align: center;
 }
 ul.project-items li {
-  font-size: 1.2em;
+  font-size: 2.1vh;
   margin-bottom: 1em;
-  margin-left: 2em;
-}
-ul.project-items .mixed-message-pic {
-  display: none;
-  height: auto;
-  width: 30em;
-  transform: rotate(90deg);
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
 }
 
 .skill-section {
   background: var(--background-color3);
 }
 .skill-section .skill-items {
+  font-size: 1.5vh;
   display: flex;
   margin-right: 3%;
   margin-left: 3%;
@@ -148,6 +141,12 @@ ul.project-items .mixed-message-pic {
   display: grid;
   align-items: center;
   margin-left: 3%;
+}
+.skill-section .icon {
+  height: 5.5vh;
+}
+.skill-section cite {
+  font-size: 1vh;
 }
 
 h2 {
@@ -267,6 +266,7 @@ nav li a:hover {
   }
   .about-me-section .about-left .profile-pic {
     height: 25em;
+    display: block;
   }
   .about-me-section .about-right {
     height: 75%;
