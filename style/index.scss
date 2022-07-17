@@ -24,7 +24,7 @@ body {
 
 .navbar{
     background: var(--background-color1);
-    padding: 1.75vh;
+    padding: 1.60vh;
 
     .logo{
         text-decoration: none;
@@ -46,7 +46,7 @@ body {
     
     .container{
         display: flex;
-        place-content: space-between;
+        justify-content: space-between;
     }
 
     .mobile-menu{
@@ -144,7 +144,7 @@ ul.project-items {
     }
 
     .mixed-message-pic{
-        display: none;
+       display: none;
         height: auto;
         width:30em;
         transform: rotate(90deg);
@@ -155,12 +155,20 @@ ul.project-items {
 .skill-section{
     background: var(--background-color3);
 
+
     .skill-items {
         display: flex;
-        margin-right: 1em;
-        margin-left: 2em;
+        margin-right: 3%;
+        margin-left: 3%;
         justify-content: space-between;
     }
+
+    .soft-skills {
+        display: grid;
+        align-items: center;
+        margin-left: 3%;
+    }
+
 }
 
 h2 {
@@ -217,11 +225,29 @@ nav {
     cursor: pointer;
 }
 
+.social-media {
+    display: inline-block;
+    height: 5vh;
+    width: 80%;
+
+
+    .socials{
+        display: flex;
+        margin-left: 2%;
+        margin-right: 5%;
+        padding-left: 1em;
+
+        justify-content: space-between;
+    }
+
+}
+
+
 @media only screen and (min-width: 768px) {
     .mobile-menu, .mobile-menu-exit{
         display: none;
     }
-
+    
     .navbar .container {
         display: grid;
         grid-template-columns: 300px auto;
@@ -247,13 +273,92 @@ nav {
         }
         ul.primary-nav {
             margin: 0;
+            padding-left: 3em;
         }
-        li.current a{
-            font-weight: bold;
+        ul.secondary-nav {
+            margin: 0;
+            padding-right: 3em;
+        }
+    }
+
+    .introduction {
+        height: 50vh;
+        display:flex;
+        background-size: 105em;
+        background-position: 75% 30%;
+
+        .left-col{
+            padding-left: 2.5vw;
+            padding-top: 5vh;
+            align-items: center;
+        }
+    }
+
+    .about-me-section{
+        height: 50vh;
+        display: grid;
+        grid-template-columns: 300px auto;
+
+        .about-left{
+            padding-left: 2em;
+            padding-right: 2em;
+
+            .profile-pic {
+                height: 25em;
+            }
+        }
+
+        .about-right{
+            height: 75%;
+            padding-left: 5em;
+            padding-right: 5em;
+            
         }
 
     }
 
+    .project-section{
+        height: 50vh;
+        align-items: center;
 
+        .project-items{
+            display: flex;
+            margin-right: 5%;
+            justify-content: space-between;
+
+            .li{
+                .mixed-message-pic {
+                    height: 50px;
+                }
+            }
+        }
+
+    }
+
+    .skill-section{
+        height: 50vh;
+
+        .skill-items{
+            height: 10em;
+            justify-content: baseline;
+        }
+
+        .soft-skills{
+            height: 50%;
+        }
+    }
+
+    .social-media{
+        height: 5vh;
+        align-items: center;
+
+        .socials {
+            display: flex;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+    }
 
 }
