@@ -1,6 +1,6 @@
 html{
     scroll-behavior: smooth;
-   // background: white;
+    background: white;
 }
 
 body {
@@ -14,15 +14,13 @@ body {
     --font-color1: #120309; // 
     --font-color2: #4D93A8; //F55C3D 3B7080B
     --font-color3: #DDD5D0;
-    
-  //  --background-color1: #EBEBEB;
-  //  --background-color2: #1C110A; //222222
-  //  --background-color3: #E0E0E0;
+
+    --background-color3: #E0E0E0;
 }
 
 
 .navbar{
-    background: var(--background-color1);
+    background: var(--background-color3);
     padding-top: 1.50vh;
     padding-bottom: 1.5vh;
     margin-right: 0;
@@ -33,7 +31,6 @@ body {
         color: var(--font-color1);
         font-size: 1.2em;
         padding: 0;
-        //padding-right: 5em;
         padding-left: 1em;
     }  
 
@@ -56,7 +53,6 @@ body {
 }
 
 .introduction {
-    background: var(--background-color3);
     color: var(--font-color1);
     background-image: url(../images/intro-img.svg);
     background-size:cover;
@@ -70,6 +66,7 @@ body {
     .name{
         font-size: 4vh;
         font-weight: bold;
+        line-height: .2em;
         span{
             color:var(--font-color2);
         }
@@ -119,7 +116,7 @@ section {
 
     .head{
         color: var(--font-color2);
-        background: var(--background-color2);
+        background: white;
         text-align: center;
     }
 
@@ -131,8 +128,8 @@ section {
 }
 
 .project-section{
-  //  background: var(--background-color3);
     align-items: center;
+    color: white;
 }
 
 ul.project-items {
@@ -140,25 +137,29 @@ ul.project-items {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(19rem, 1f));
     vertical-align: center;
+    
+    a{
+        color: white;
+    } 
 
     li {
         font-size: 2.1vh;
         margin-bottom: 1em;
         margin-left: 0.5vw;  
         margin-right: 0.5vw;  
+        background-color:#4D93A8;
+        padding: 0 1em 0 1em;
+        border-radius: 5%;
     }
 
 }
 
 .skill-section{
-    background: var(--background-color3);
 
 
     .skill-items {
         font-size: 1.5vh;
         display: flex;
-        margin-right: 3%;
-        margin-left: 3%;
         justify-content: space-between;
     }
 
@@ -182,8 +183,8 @@ h2 {
 }
 
 .head{
-    background: gray;
-    border-radius: 3em;
+    background: white;
+    color: var(--font-color2);
     padding: 0em 1em;
     font-weight: bold;
     display: flex;
@@ -231,22 +232,43 @@ nav {
 }
 
 .social-media {
-    display: inline-block;
     height: 5vh;
     width: 80%;
+    display: flex;
 
-
-    .socials{
-        display: flex;
-        margin-left: 2%;
-        margin-right: 5%;
-        padding-left: 1em;
-
-        justify-content: space-between;
+    .social-left{
+        margin-left: 1.2em;
+        float:left;
+        .socials{
+            display: flex;
+        }
+        li{
+            padding-right: .5em;
+        }
+    }    
+    
+    .social-right{
+        float: right;
+        margin-top: 1em;
+        padding-left: .5em;
+        .contact{
+            background-color: var(--font-color2);
+            color: white;
+            size: 3.5vh;
+            padding: .3em .5em;
+            border-radius: 5em;
+        }
     }
-
 }
 
+footer{
+    font-size: smaller;
+    margin-left: 10vw;
+
+    a{
+        text-decoration: underline;
+    }
+}
 
 @media only screen and (min-width: 768px) {
     .mobile-menu, .mobile-menu-exit{
@@ -344,9 +366,20 @@ nav {
     .skill-section{
         height: 50vh;
 
+        h3{
+            margin-left: 2em;
+        }
+
         .skill-items{
             height: 10em;
-            justify-content: baseline;
+            display: inline-flex;
+            margin-left: 5em;
+        }
+
+        li{
+
+            padding-left: 3em;
+            padding-right: 3em;
         }
 
         .soft-skills{
@@ -355,16 +388,23 @@ nav {
     }
 
     .social-media{
+        display: inline-flex;
+        margin-left: 30%;
         height: 5vh;
-        align-items: center;
+        justify-content: space-between;
 
         .socials {
             display: flex;
             justify-content: center;
             margin-left: auto;
             margin-right: auto;
-
         }
+
+        li{
+            padding-right: 2em;
+        }
+
+
     }
 
 }
