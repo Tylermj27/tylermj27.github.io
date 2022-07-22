@@ -14,13 +14,10 @@ body {
     --font-color1: #120309; // 
     --font-color2: #4D93A8; //F55C3D 3B7080B
     --font-color3: #DDD5D0;
-
-    --background-color3: #E0E0E0;
 }
 
 
 .navbar{
-    background: var(--background-color3);
     padding-top: 1.50vh;
     padding-bottom: 1.5vh;
     margin-right: 0;
@@ -53,12 +50,21 @@ body {
 }
 
 .introduction {
-    color: var(--font-color1);
-    background-image: url(../images/intro-img.svg);
-    background-size:cover;
-    background-position: center;
-    background-size: 70vh;
+    color: white;
+    background-image: url(../images/Mizzou-columns.jpg); 
+    background-repeat: none;
+    background-size: cover;
     margin: 0;
+
+    .pic-cite{
+        font-size: .5vh;
+        color: white;
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
 
     .greeting {
         font-size: 1.75vh;
@@ -68,7 +74,7 @@ body {
         font-weight: bold;
         line-height: .2em;
         span{
-            color:var(--font-color2);
+            color:#73ADBF;
         }
     }
     .title{
@@ -107,6 +113,7 @@ section {
         width: auto;
         margin: 1em auto 0.5em auto;
         display: none;
+        border-radius: 7px;
     }
 
     .about-right{
