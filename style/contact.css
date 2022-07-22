@@ -91,6 +91,35 @@ nav li a:hover {
   cursor: pointer;
 }
 
+.hero .title {
+  font-size: 3.5vh;
+  margin-left: 1em;
+}
+.hero .container {
+  padding: 15px;
+}
+.hero input[type=text], .hero select, .hero textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.hero input[type=submit] {
+  background-color: #73ADBF;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.hero input[type=submit]:hover {
+  background-color: var(--font-color2);
+}
+
 @media only screen and (min-width: 768px) {
   .mobile-menu, .mobile-menu-exit {
     display: none;
