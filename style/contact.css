@@ -1,0 +1,128 @@
+html {
+  scroll-behavior: smooth;
+  background: white;
+}
+
+body {
+  margin: 0;
+  font-family: "Georgia";
+  height: 100vh;
+  width: 100vw;
+}
+
+:root {
+  --font-color1: #120309;
+  --font-color2: #4D93A8;
+  --font-color3: #DDD5D0;
+  --background-color3: #E0E0E0;
+}
+
+.navbar {
+  background: var(--background-color3);
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  margin-right: 0;
+}
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--font-color1);
+  font-size: 1.2em;
+  padding: 0;
+  padding-left: 1em;
+}
+.navbar .logo-name {
+  color: var(--font-color2);
+}
+.navbar nav {
+  display: none;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 33%;
+  right: 0;
+  top: 0;
+  background: var(--font-color2);
+  height: 100vh;
+  padding: 1em;
+}
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+nav li a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 300px auto;
+    justify-content: unset;
+  }
+  .navbar nav {
+    display: flex;
+    place-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: 0.1em 1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+    padding-left: 3em;
+  }
+  .navbar nav ul.secondary-nav {
+    margin: 0;
+    padding-right: 3em;
+  }
+}/*# sourceMappingURL=contact.css.map */
